@@ -55,7 +55,7 @@ function App() {
       children: [
         { path: "home", element:<ProtectedRouting> <Home/></ProtectedRouting>  },
         { path: "login", element: <Login saveuser={saveuser} /> },
-      
+        { path: "*", element: <Notfound /> },
         { path: "ForgetPassword", element: <ForgetPassword /> },
         { path: "resetpassword", element: <ResetPassword /> },
         { path: "products/:id", element: <ProtectedRouting><Products /> </ProtectedRouting>},
