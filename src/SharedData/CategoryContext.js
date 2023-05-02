@@ -15,6 +15,7 @@ export function CategoryContextProvider(props){
         setlistofcategories(data.data)
     }
     useEffect(()=>{
+        
         getcategories()
     },[])
 return <CategoryContext.Provider value={{listofcategories}}>

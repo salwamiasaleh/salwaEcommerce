@@ -15,8 +15,11 @@ export default function Login({saveuser}) {
   
   let valid= Yup.object({
     email:Yup.string().email("enter a valid email").required(),
-    password:Yup.string().required().matches(/^[A-Z][a-zA-Z0-9!@#$%^&*()_-]{6,16}$/,"Invalid password: must begin with a capital letter and contain a number or a special character")  })
-  let loginform=useFormik({
+    password:Yup.string().required().matches(/^[A-Z][a-zA-Z0-9!@#$%^&*()_-]{6,16}$/,"Invalid password: must begin with a capital letter and contain a number or a special character")  
+  })
+  
+  
+    let loginform=useFormik({
     initialValues:{
       email:"",
       password:""
