@@ -43,7 +43,7 @@ function App() {
       return props.children
     }
     else{
-      return <Navigate to="/register" />
+      return <Navigate to="/login" />
     }
 
   }
@@ -62,7 +62,7 @@ function App() {
         { path: "category", element: <ProtectedRouting><Category/> </ProtectedRouting>},
         { path: "cart", element: <ProtectedRouting><CartDetails/> </ProtectedRouting>},
         { path: "profile", element:  <ProtectedRouting><Profile userdata={userdata} />  </ProtectedRouting>},
-        { path: "register", element: <Register /> },
+        { index:true, element: <Register /> },
       ],
     },
   ]);
