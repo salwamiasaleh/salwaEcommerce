@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/salwaEcommerce/static/css/main.a9628eef.css",
-    "main.js": "/salwaEcommerce/static/js/main.628d0c8e.js",
+    "main.js": "/salwaEcommerce/static/js/main.f6111a12.js",
     "static/js/787.abb7105f.chunk.js": "/salwaEcommerce/static/js/787.abb7105f.chunk.js",
     "static/media/fa-solid-900.ttf": "/salwaEcommerce/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/slider-image-1.jpeg": "/salwaEcommerce/static/media/slider-image-1.3c3940ee0f1c3b17ff9a.jpeg",
@@ -16,11 +16,11 @@
     "static/media/fa-v4compatibility.woff2": "/salwaEcommerce/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/salwaEcommerce/index.html",
     "main.a9628eef.css.map": "/salwaEcommerce/static/css/main.a9628eef.css.map",
-    "main.628d0c8e.js.map": "/salwaEcommerce/static/js/main.628d0c8e.js.map",
+    "main.f6111a12.js.map": "/salwaEcommerce/static/js/main.f6111a12.js.map",
     "787.abb7105f.chunk.js.map": "/salwaEcommerce/static/js/787.abb7105f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9628eef.css",
-    "static/js/main.628d0c8e.js"
+    "static/js/main.f6111a12.js"
   ]
 }
