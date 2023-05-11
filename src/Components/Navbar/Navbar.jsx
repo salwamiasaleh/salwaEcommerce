@@ -50,10 +50,10 @@ return (
       </li>
       </>:<>
       <li className="nav-item active">
-              <NavLink className={({isActive})=>isActive?"nav-link active":"nav-link"} to="login">Login <span className="sr-only">(current)</span></NavLink>
+              <NavLink className={({isActive})=>isActive?"nav-link active":"nav-link"} to="salwaEcommerce">Login <span className="sr-only">(current)</span></NavLink>
             </li>
       <li className="nav-item active">
-        <NavLink className={({isActive})=>isActive?"nav-link active":"nav-link"} to="">Register <span className="sr-only">(current)</span></NavLink>
+        <NavLink className={({isActive})=>isActive?"nav-link active":"nav-link"} to="register">Register <span className="sr-only">(current)</span></NavLink>
       </li>
 </>
     }

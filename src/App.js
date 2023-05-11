@@ -39,12 +39,11 @@ function App() {
     }
   }, []);
   function ProtectedRouting(props) {
-    if(localStorage.getItem("token")){
+    if (localStorage.getItem("token")) {
       return props.children
-    }
-    else{
-      return <Navigate to="/login" />
-    }
+  } else {
+      return <Navigate to='/login' />
+  }
 
   }
 
@@ -53,16 +52,16 @@ function App() {
       path: "",
       element: <Layout userdata={userdata} logout={logout}/>,
       children: [
+        { path:"register", element: <Register /> },
         { path: "home", element:<ProtectedRouting> <Home/></ProtectedRouting>  },
-        { path: "login", element: <Login saveuser={saveuser} /> },
-        { path: "*", element: <Notfound /> },
+        { path: "salwaEcommerce", element: <Login saveuser={saveuser} /> },
         { path: "ForgetPassword", element: <ForgetPassword /> },
         { path: "resetpassword", element: <ResetPassword /> },
         { path: "products/:id", element: <ProtectedRouting><Products /> </ProtectedRouting>},
         { path: "category", element: <ProtectedRouting><Category/> </ProtectedRouting>},
         { path: "cart", element: <ProtectedRouting><CartDetails/> </ProtectedRouting>},
         { path: "profile", element:  <ProtectedRouting><Profile userdata={userdata} />  </ProtectedRouting>},
-        { index:true, element: <Register /> },
+        { path: "*", element: <Notfound /> },
       ],
     },
   ]);
