@@ -27,7 +27,7 @@ function App() {
     setuserdata(null)
     localStorage.removeItem("token")
     console.log("button pressed")
-    return <Navigate to="/login"/>
+    return <Navigate to="/salwaEcommerce"/>
   }
   useEffect(() => {
     if (localStorage.getItem("token") != null) {
@@ -42,7 +42,7 @@ function App() {
     if (localStorage.getItem("token")) {
       return props.children
   } else {
-      return <Navigate to='/login' />
+      return <Navigate to='/salwaEcommerce' />
   }
 
   }
