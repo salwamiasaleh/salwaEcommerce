@@ -39,7 +39,7 @@ async function sendregistrationdata(info){
   })
    if(data.message=="success"){
     setloadflag(true)
-    navigateto("/login")
+    navigateto("/salwaEcommerce")
    }
 }
   return (
